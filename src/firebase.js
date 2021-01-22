@@ -9,7 +9,8 @@ const firebaseConfig = {
     storageBucket: "diwallet-c3bfb.appspot.com",
     messagingSenderId: "754128128593",
     appId: "1:754128128593:web:cab3636f980ecffb894670"
-  };
-  // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
+};
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
 
+export default firebase;
