@@ -1,35 +1,25 @@
 import './App.css';
 import firebase from './firebase';
 import { useState, useEffect } from 'react';
+import Auth from './components/Auth';
 
 function App() {
   const { auth, db } = firebase;
 
   const [user, setUser] = useState(null);
 
-  const signIn = () => {
-    const provider = new auth.GoogleAuthProvider();
-    auth()
-      .signInWithRedirect(provider)
-      .catch(err => console.log(err));
-  };
-
   useEffect(() => {
     const unsubscribe = auth().onAuthStateChanged(user => { user ? setUser(user) : setUser(null) });
     return () => unsubscribe();
-  }, []);
-
+  }, [auth]);
 
   return (
     <div className="App">
-      <h1>diwallet</h1>
-      { user ? (
-          <button onClick={() => auth().signOut()} >Sign Out</button>
-        )
-        : (
-          <button onClick={signIn}>Sign In with Google</button>
-        )
-      }
+      <header>
+        <p>diwallet</p>
+        <p>auth</p>
+      </header>
+      { user ? (<button onClick={() => auth().signOut()}>Sign Out</button>) : (<Auth />)}
     </div>
   );
 }

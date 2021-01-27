@@ -1,0 +1,96 @@
+.auth__container {
+	width: 100%;
+	font-size: 14px;
+}
+
+.auth__container p {
+	font-size: 32px;
+	text-align: center;
+	margin: 28px 0;
+}
+
+.auth__box {
+	margin: 0 auto;
+	max-width: 442px;
+	border: 1px solid rgb(230, 230, 230);
+	border-radius: 4px;
+	padding: 28px;
+	display: flex;
+	flex-direction: column;
+}
+
+.auth__boxForm {
+	display: flex;
+	flex-direction: column;
+	margin: 0 0 40px;
+}
+
+.auth__boxForm label {
+	color: #7f7f7f;
+	font-size: 12px;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.auth__boxForm input {
+	color: #696969;
+	font-size: 18px;
+	background: none;
+	border: 0;
+	border-bottom: 1px solid #d9d9d9;
+	padding: 12px 8px;
+	margin: 0 0 40px;
+}
+
+input:focus {
+	outline: 0;
+}
+
+.auth__boxFormBtns {
+	display: flex;
+	justify-content: space-between;
+}
+
+.auth__forgotPassword {
+	font-size: 16px;
+	background: 0;
+	border: 0;
+	color: #3d95ce;
+}
+
+.auth__submit {
+	background-color: #3d95ce;
+	color: white;
+	border: 0;
+	border-radius: 5px;
+	padding: 15px;
+	font-size: 14px;
+	font-weight: 600;
+}
+
+hr {
+	border: 1px solid rgb(230, 230, 230);
+}
+
+.auth__box p {
+	font-size: 14px;
+	color: #7f7f7f;
+}
+
+.auth__box__google {
+	width: 150px;
+	padding: 12px;
+	font-size: 16px;
+	font-weight: 600;
+	background-color: white;
+	color: #3d95ce;
+	border: 1px solid rgb(230, 230, 230);
+	border-radius: 5px;
+	margin: 0 auto;
+}
+
+.auth__box__google:hover {
+	color: #2b6e9b;
+	background-color: rgb(235, 235, 235);
+	cursor: pointer;
+}
