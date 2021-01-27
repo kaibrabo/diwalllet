@@ -18,6 +18,19 @@ header {
   justify-content: space-between;
 }
 
-header > p {
+header > p, .signOut {
   margin: 0 30px;
+}
+
+.signOut {
+  border: 0;
+  font-size: 16px;
+}
+
+footer {
+  margin: 48px 0 0;
+  padding: 56px 0 0;
+  color: #7f7f7f;
+  border-top: 1px solid rgb(210,210,210);
+  text-align: center;
 }

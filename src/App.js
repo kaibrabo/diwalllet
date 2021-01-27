@@ -17,9 +17,12 @@ function App() {
     <div className="App">
       <header>
         <p>diwallet</p>
-        <p>auth</p>
+        
+        { user ? (<button className="signOut" onClick={() => auth().signOut()}>sign out</button>) : (<p>auth</p>)}
       </header>
-      { user ? (<button onClick={() => auth().signOut()}>Sign Out</button>) : (<Auth />)}
+      { user ? (<div className=""></div>) : (<Auth />)}
+
+      <footer>Made with Aloha 2021</footer>
     </div>
   );
 }

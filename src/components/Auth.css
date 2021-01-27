@@ -90,7 +90,12 @@ hr {
 }
 
 .auth__box__google:hover {
-	color: #2b6e9b;
-	background-color: rgb(235, 235, 235);
-	cursor: pointer;
+	/* color: #2b6e9b;
+	background-color: rgb(235, 235, 235); */
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.auth__box__google:focus {
+    outline: none;
 }
