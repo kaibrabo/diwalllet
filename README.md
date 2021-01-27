@@ -1,8 +1,12 @@
 # Getting Started with Diwallet
 
 ## How to run:
+Clone Repo:
 
 `git clone https://github.com/kaibrabo/diwalllet.git`
+
+Enter project directory: 
+
 `cd diwallet`
 
 In the project directory, you can run:
